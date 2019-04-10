@@ -7,10 +7,10 @@ using Microsoft.Extensions.Logging;
 
 namespace EventHub_StreamAnalytics_Prototype
 {
-    public static class Consumer
+    public static partial class Functions
     {
         [FunctionName("Consumer")]
-        public static async Task<IActionResult> Run(
+        public static async Task<IActionResult> Consumer(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
         {
