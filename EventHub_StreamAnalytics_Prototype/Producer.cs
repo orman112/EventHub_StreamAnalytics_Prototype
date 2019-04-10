@@ -31,7 +31,10 @@ namespace EventHub_StreamAnalytics_Prototype
                 testLog.Information("Testing new Alert");
             }
 
-            return JsonConvert.SerializeObject(new { Hello = "World" });
+            //return JsonConvert.SerializeObject(new { Hello = "World" });
+            var message = "Hello World!";
+
+
         }
     }
 }
