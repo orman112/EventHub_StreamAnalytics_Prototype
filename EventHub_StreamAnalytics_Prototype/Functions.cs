@@ -12,7 +12,6 @@ namespace EventHub_StreamAnalytics_Prototype
         private static bool _initialized = false;
         private static IConfiguration _configuration;
 
-
         private static IConfiguration Initialize(ExecutionContext executionContext)
         {
             if (!_initialized)

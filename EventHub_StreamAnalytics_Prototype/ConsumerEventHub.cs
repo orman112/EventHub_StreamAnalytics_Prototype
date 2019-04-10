@@ -28,7 +28,7 @@ namespace EventHub_StreamAnalytics_Prototype
                     string messageBody = Encoding.UTF8.GetString(eventData.Body.Array, eventData.Body.Offset, eventData.Body.Count);
 
                     // Replace these two lines with your processing logic.
-                    log.LogInformation($"C# Event Hub trigger function processed a message: {messageBody}");
+                    log.LogWarning($"C# Event Hub trigger function processed a message: {messageBody}");
                     await Task.Yield();
                 }
                 catch (Exception e)
